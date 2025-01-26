@@ -7,7 +7,7 @@ threads = int(input("Threads : "))
 
 hook = dhooks.Webhook(webhook)
 
-def loop():
+def send():
 
     for x in range(threads) :
         hook.send(message)
@@ -15,6 +15,6 @@ def loop():
         hook.send(message_2)
         print(f"[+] {webhook}")
 
-loop()
+send()
 
 
